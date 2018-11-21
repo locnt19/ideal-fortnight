@@ -1,0 +1,30 @@
+=btn()
+	color: #000000
+	background: #F4C93C
+	border-radius: 3rem
+	font-weight: bold
+	padding: 0.8rem 4rem
+=gach-duoi()
+	display: block
+	position: relative
+	width: 100px
+	height: 4px
+	background: #F4C93C 
+	&:before,
+	&:after
+		display: block
+		content: ''
+	&:before
+		background: #F4C93C 
+		width: 4px
+		height: 4px
+		border-radius: 4px
+		position: absolute
+		left: -2px
+	&:after
+		background: #F4C93C 
+		width: 4px
+		height: 4px
+		border-radius: 4px
+		position: absolute
+		right: -2px

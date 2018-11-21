@@ -1,0 +1,60 @@
+header
+	background-color: rgba(0,0,0,0.75)
+	.navbar
+		.navbar-toggler
+			border: 1px solid #fff 
+			span
+				color: #fff 
+	.navbar-brand
+		.logo
+			transform: translateY(-10%)
+			display: inline-block
+			i 
+				width: 50px
+				height: 50px
+				background: #F4C93C
+				border-radius: 50%
+				color: #fff 
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 2.5rem
+		.sologan
+			display: inline-block
+			p
+				margin: 0
+				text-transform: uppercase
+				color: #fff 
+				letter-spacing: 3px
+			.travel
+				font-weight: bold
+			.vietnam
+				font-size: 1rem
+
+	.navbar-nav
+		.nav-item
+			text-transform: uppercase
+			font-weight: bold
+			margin: 0 -15px 2px
+			padding: 0 2rem
+			&:hover,
+			&.active
+				background: #F4C93C
+				.nav-link
+					color: #000000
+			.nav-link
+				padding-left: .5rem 
+				color: #fff
+		+media-breakpoint-up(md)
+				.nav-item
+					margin: 0
+					margin-left: 2px
+					&:hover,
+					&.active
+						border-radius: 2rem
++media-breakpoint-up(sm)
+	header
+		background-color: transparent
+		position: fixed
+		width: 100%
+		z-index: 999

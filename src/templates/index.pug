@@ -1,0 +1,79 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.banner
+		.owl-carousel.owl-theme
+			.item
+				img(src="img/slider_img_01.png", alt="")
+				.title
+					h1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iusto?
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente magnam dolor saepe labore facilis rem quos, adipisci unde quibusdam suscipit quaerat velit fugit, deleniti atque quod omnis asperiores ad!
+					button.btn CLICK HERE
+			.item
+				img(src="img/slider_img_01.png", alt="")
+				.title
+					h1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iusto?
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente magnam dolor saepe labore facilis rem quos, adipisci unde quibusdam suscipit quaerat velit fugit, deleniti atque quod omnis asperiores ad!
+					button.btn CLICK HERE
+			.item
+				img(src="img/slider_img_01.png", alt="")
+				.title
+					h1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iusto?
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente magnam dolor saepe labore facilis rem quos, adipisci unde quibusdam suscipit quaerat velit fugit, deleniti atque quod omnis asperiores ad!
+					button.btn CLICK HERE
+	section.about
+		.container
+			.row
+				.col
+					h2.title WHY 
+						span CHOOSE US
+						i
+					.content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ducimus laudantium, at, facilis nostrum enim dolore voluptate, reprehenderit minus velit rem exercitationem fugiat nulla. In odio maxime nostrum accusantium possimus?
+			.row
+				.col-md-4
+					.item
+						figure
+							img(src="img/about_img_01.png", alt="")
+						ficaption
+							.title
+								h3 Lorem ipsum dolor sit amet.
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique.
+				.col-md-4
+					.item
+						figure
+							img(src="img/about_img_02.png", alt="")
+						ficaption
+							.title
+								h3 Lorem ipsum dolor sit amet.
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique.
+				.col-md-4
+					.item
+						figure
+							img(src="img/about_img_03.png", alt="")
+						ficaption
+							.title
+								h3 Lorem ipsum dolor sit amet.
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique.
+	
+	section.news
+		.container
+			.row
+				.col-md-6
+					h2.title WHY 
+						span CHOOSE US
+						i
+					h3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, vel?
+					span Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis fugiat velit dicta quo quae odit autem corrupti neque tenetur maxime, facere deleniti architecto minus quidem libero maiores. Harum quidem quae natus in eligendi provident esse veritatis deleniti beatae architecto. Quo sequi adipisci expedita. Recusandae velit quam a pariatur culpa dolorum.
+					button.btn CLICK HERE
+				.col-md-6
+					.content
+						.scrollbar Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci ratione quod corporis nobis, alias nulla molestiae error doloribus doloremque facilis. Alias illum similique voluptatem possimus, hic totam, ab nulla, explicabo quidem maiores dolores consequatur corporis officiis sapiente minima! Dolores molestiae enim non eveniet asperiores inventore vel, ipsum neque perspiciatis ipsam illum hic tenetur nisi iusto commodi veritatis itaque quaerat veniam soluta porro a, officia harum. Rerum tenetur, suscipit, voluptatem similique quibusdam ratione laborum animi quo dolor aliquam nemo atque praesentium quaerat. Explicabo nemo temporibus eum voluptas expedita illum maxime eaque sunt aut quod excepturi nisi corrupti similique quis aspernatur officiis a modi, nam eligendi, sed error, nulla dolore aliquid tenetur? Eveniet fugit nostrum sapiente omnis est mollitia doloribus odit error quae natus alias nam, quidem sunt ex enim possimus! Magnam minima accusantium ratione possimus sint doloremque provident esse tenetur rem eaque, qui numquam autem sunt consequatur magni alias. Vel.
+							.force-overflow

@@ -1,0 +1,26 @@
+<!-- ////////////// HEADER ////////////// -->
+header
+	.container
+		nav.navbar.navbar-expand-lg.navbar-light
+			a.navbar-brand(href="#")
+				.logo
+					i.fa.fa-plane
+				.sologan
+					p.travel travel
+					p.vietnam vietnam
+			//- Đây là nút sẽ hiển thị trong mobile
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải
+				.mr-auto
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href="index.html") Home
+					li.nav-item
+						a.nav-link(href="#") Services
+					li.nav-item
+						a.nav-link(href="#") About
+					li.nav-item
+						a.nav-link(href="#") Contact
+<!-- ////////////// HEADER ////////////// -->
