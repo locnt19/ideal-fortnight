@@ -6548,44 +6548,54 @@ footer {
 .news {
   background: url("../img/news_bg.png") center bottom; }
   .news .container {
-    padding: 5rem;
-    color: #8c8c8c; }
-    .news .container h2.title {
-      text-transform: uppercase;
-      color: #F4C93C; }
-      .news .container h2.title span {
-        color: #fff; }
-      .news .container h2.title i {
-        margin: 1rem 0;
-        display: block;
-        position: relative;
-        width: 100px;
-        height: 4px;
-        background: #F4C93C; }
-        .news .container h2.title i:before, .news .container h2.title i:after {
+    color: #8c8c8c;
+    padding: 2rem; }
+    @media (min-width: 576px) {
+      .news .container {
+        padding: 5rem; } }
+    .news .container .title {
+      text-align: center; }
+      .news .container .title h2 {
+        text-transform: uppercase;
+        color: #F4C93C; }
+        .news .container .title h2 span {
+          color: #fff; }
+        .news .container .title h2 i {
+          margin: 1rem auto;
           display: block;
-          content: ''; }
-        .news .container h2.title i:before {
-          background: #F4C93C;
-          width: 4px;
+          position: relative;
+          width: 100px;
           height: 4px;
-          border-radius: 4px;
-          position: absolute;
-          left: -2px; }
-        .news .container h2.title i:after {
-          background: #F4C93C;
-          width: 4px;
-          height: 4px;
-          border-radius: 4px;
-          position: absolute;
-          right: -2px; }
-    .news .container .btn {
-      color: #000000;
-      background: #F4C93C;
-      border-radius: 3rem;
-      font-weight: bold;
-      padding: 0.8rem 4rem;
-      margin: 3rem; }
+          background: #F4C93C; }
+          .news .container .title h2 i:before, .news .container .title h2 i:after {
+            display: block;
+            content: ''; }
+          .news .container .title h2 i:before {
+            background: #F4C93C;
+            width: 4px;
+            height: 4px;
+            border-radius: 4px;
+            position: absolute;
+            left: -2px; }
+          .news .container .title h2 i:after {
+            background: #F4C93C;
+            width: 4px;
+            height: 4px;
+            border-radius: 4px;
+            position: absolute;
+            right: -2px; }
+      .news .container .title .btn {
+        color: #000000;
+        background: #F4C93C;
+        border-radius: 3rem;
+        font-weight: bold;
+        padding: 0.8rem 4rem;
+        margin: 3rem; }
+    @media (min-width: 768px) {
+      .news .container .title {
+        text-align: left; }
+        .news .container .title h2 i {
+          margin: 1rem 0; } }
     .news .container .content {
       border: 2px solid #F4C93C;
       border-radius: 2px;
@@ -6595,7 +6605,7 @@ footer {
         margin: 3rem;
         float: left;
         overflow-y: scroll;
-        max-height: 250px; }
+        max-height: 300px; }
         .news .container .content .scrollbar::-webkit-scrollbar {
           width: 6px;
           border-radius: 3px;

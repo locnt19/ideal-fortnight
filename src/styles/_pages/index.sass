@@ -84,19 +84,29 @@
 .news
 	background: url('../img/news_bg.png') center bottom
 	.container
-		padding: 5rem
 		color: #8c8c8c 
-		h2.title
-			text-transform: uppercase
-			color: #F4C93C 
-			span
-				color: #fff 
-			i
-				margin: 1rem 0
-				+gach-duoi()
-		.btn
-			+btn()
-			margin: 3rem
+		padding: 2rem
+		+media-breakpoint-up(sm)
+			padding: 5rem
+		.title
+			text-align: center
+			h2
+				text-transform: uppercase
+				color: #F4C93C 
+				span
+					color: #fff 
+				i
+					margin: 1rem auto
+					+gach-duoi()
+			.btn
+				+btn()
+				margin: 3rem
+		+media-breakpoint-up(md)
+			.title
+				text-align: left
+				h2
+					i 
+						margin: 1rem 0
 		.content
 			border: 2px solid #F4C93C 
 			border-radius: 2px
@@ -106,7 +116,7 @@
 				margin: 3rem
 				float: left
 				overflow-y: scroll
-				max-height: 250px
+				max-height: 300px
 				&::-webkit-scrollbar
 					width: 6px
 					border-radius: 3px
